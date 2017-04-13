@@ -1,4 +1,18 @@
-body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  background: yellow;
+body
+{
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+    background: yellow;
+}
+
+body .container
+{
+    font-family: Capitals,Impact,fantasy;
+    font-size: 49px;
+    font-weight: normal;
+
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
