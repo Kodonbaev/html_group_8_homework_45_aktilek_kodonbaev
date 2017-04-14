@@ -1,1 +1,44 @@
-$(".select-language select").change(function(){$(this).parent().find("span").text($(this).find("option:selected").text())}),$(".btn-select").click(function(){$("#select-wrap").toggleClass("open")}),$(".manufacturers").styler(),$(document).ready(function(){$(".slider").slick({slidesToShow:4,slidesToScroll:1,dots:!0,responsive:[{breakpoint:1024,settings:{slidesToShow:3,slidesToScroll:3,infinite:!0,dots:!0}},{breakpoint:600,settings:{slidesToShow:2,slidesToScroll:2}},{breakpoint:480,settings:{slidesToShow:1,slidesToScroll:1}}]})});
+/**
+ * Created by User on 11.02.2017.
+ */
+$('.select-language select').change(function () {
+    $(this).parent().find('span').text($(this).find('option:selected').text());
+});
+$('.btn-select').click(function () {
+    $('#select-wrap').toggleClass('open');
+});
+
+$('.manufacturers').styler();
+
+$(document).ready(function () {
+    $('.slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
